@@ -10,3 +10,8 @@ wheels/
 .venv
 
 uv.lock
+
+# add environment variables file
+.env
+
+chroma_db
