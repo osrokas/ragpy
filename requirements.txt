@@ -1,0 +1,9 @@
+databricks-vectorsearch>=0.67
+langchain>=1.2.17
+langchain-community>=0.4.1
+langchain-text-splitters>=1.1.2
+pandas>=3.0.2
+pypdf>=6.10.2
+pypdfium2>=5.8.0
+sentence-transformers>=5.4.1
+streamlit>=1.57.0
