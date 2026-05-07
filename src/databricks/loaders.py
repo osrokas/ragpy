@@ -1,6 +1,7 @@
-from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.functions import expr
+from pyspark.sql import SparkSession, DataFrame
 
+from src.models import ParsedDocument
 
 class PDFLoader:
     def __init__(self, spark: SparkSession, path: str):
