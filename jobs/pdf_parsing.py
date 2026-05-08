@@ -4,8 +4,6 @@ from pyspark.sql import SparkSession
 
 from ragpy_modules.loaders import PDFLoader
 
-# "/Volumes/rag/raw/landing"
-# "/Volumes/rag/raw/parsed_data/new_parsed.json"
 def main(input_path: str, output_path: str):
     spark = SparkSession.builder.appName("PDFLoaderExample").getOrCreate()
 
@@ -15,7 +13,8 @@ def main(input_path: str, output_path: str):
 
     # Save json to volume
     with open(output_path, "w") as f:
-        jsons.write(f)
+        for json in jsons:
+            f.write(json + "\n")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Load PDFs, parse them, and save the parsed JSON.")
