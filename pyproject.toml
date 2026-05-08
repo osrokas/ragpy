@@ -21,4 +21,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-databricks-ragpy = { path = "databricks/dist/databricks_ragpy-0.1.0-py3-none-any.whl" }
+databricks-ragpy = { path = "databricks/dist/databricks_ragpy-0.1.1-py3-none-any.whl" }
