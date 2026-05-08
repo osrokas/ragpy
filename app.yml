@@ -2,4 +2,4 @@ command: ['streamlit', 'run', 'streamlit_app.py']
 resources:
   - name: packages
     volume:
-      path: /Volumes/workspace/default/packages
+      path: /Volumes/test/bronze/packages
