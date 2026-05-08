@@ -1,1 +1,7 @@
 command: ['streamlit', 'run', 'streamlit_app.py']
+env:
+  - name: DATABRICKS_HOST
+    valueFrom: host
+    
+  - name: DATABRICKS_TOKEN
+    valueFrom: token
