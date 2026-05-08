@@ -1,1 +1,5 @@
 command: ['streamlit', 'run', 'streamlit_app.py']
+resources:
+  - name: packages
+    volume:
+      path: /Volumes/workspace/default/packages
