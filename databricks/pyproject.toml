@@ -1,24 +1,22 @@
 [project]
-name = "ragpy"
+name = "databricks-ragpy"
 version = "0.1.0"
-description = "Add your description here"
+description = "RAG library for Databricks."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "chromadb>=1.5.9",
-    "databricks-ragpy",
     "databricks-vectorsearch>=0.67",
-    "fastapi[standard]>=0.136.1",
     "langchain>=1.2.17",
     "langchain-community>=0.4.1",
     "langchain-text-splitters>=1.1.2",
-    "ollama>=0.6.2",
-    "pandas>=3.0.2",
     "pypdf>=6.10.2",
     "pypdfium2>=5.8.0",
     "sentence-transformers>=5.4.1",
-    "streamlit>=1.57.0",
 ]
 
-[tool.uv.sources]
-databricks-ragpy = { path = "databricks/dist/databricks_ragpy-0.1.0-py3-none-any.whl" }
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ragpy_modules"]

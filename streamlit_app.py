@@ -2,7 +2,7 @@ import os
 
 import streamlit as st
 
-from databricks.vectorstore import DatabricksRAG, DatabricksVectorSearchStore
+from ragpy_modules.vectorstore import DatabricksVectorSearchStore, DatabricksRAG
 
 DEFAULT_SYSTEM_PROMPT = (
     "You are a helpful assistant for answering questions about the documents in "

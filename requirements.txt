@@ -7,3 +7,4 @@ pypdf>=6.10.2
 pypdfium2>=5.8.0
 sentence-transformers>=5.4.1
 streamlit>=1.57.0
+databricks/dist/databricks_ragpy-0.1.0-py3-none-any.whl
